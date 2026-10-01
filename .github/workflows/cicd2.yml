@@ -19,4 +19,4 @@ jobs:
             - name: Compilacion
               run: dotnet build --configuration Release --no-restore
             - name: Ejecutando pruebas
-              run: dotnet test --no-build --verbosity # Modo verbosity plasma resultados en consola
+              run: dotnet test --no-build --verbosity normal # Modo verbosity plasma resultados en consola

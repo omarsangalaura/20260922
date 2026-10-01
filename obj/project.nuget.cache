@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sJI8+N2hO4uZXM0HuHsK4SklAmS/39iGlVaZqLduJ8TlDUmAY6iVfFXH60ur4sxcquudPGE4pOPZyrscrGeQ0Q==",
+  "dgSpecHash": "sJWfHD1r4NE=",
   "success": true,
-  "projectFilePath": "/home/rusok/Descargas/DevOps202609/cicdInicial/ejemplo3/proyectoRapido/proyectoRapido.csproj",
+  "projectFilePath": "C:\\Users\\omars\\Documents\\04_PERSONAL\\06_PREPARACION\\01_CURSOS_EDUCOMSER\\05_FUNDAMENTOS_CI_CD\\02_TRAINING\\20260922\\proyectoRapido.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
