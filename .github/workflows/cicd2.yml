@@ -1,0 +1,22 @@
+name: CICD - ASP.NET (.NET 10)
+on:
+    push:
+        branches: [main] # formato de lista con corchetes
+    pull_request: # sin especificar se asume que se comprueba todas las ramas
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Clonando repositorio
+              uses: actions/checkout@v6.0.1
+            - name: Configurando .NET 10.0
+              uses: actions/setup-dotnet@v4
+              with:
+                dotnet-version: '10.0.x'
+            - name: Preparando dependencias
+              run: dotnet restore # Indica que comandos se van a ejecutar
+            - name: Compilacion
+              run: dotnet build --configuration Release --no-restore
+            - name: Ejecutando pruebas
+              run: dotnet test --no-build --verbosity # Modo verbosity plasma resultados en consola
